@@ -1,0 +1,8 @@
+Algoritmo Calcular_IVA_Producto
+    Definir iva, articulo, val_total Como Real;
+    Escribir "valor de articulo";
+    Leer articulo;
+    iva <- 0.19 * articulo;
+    val_total <- iva + articulo;
+    Escribir "tu valor es ", val_total;
+FinAlgoritmo

@@ -1,0 +1,9 @@
+Algoritmo Calcular_Consumo_Gasolina
+    Definir gasolinaL, kl, consumo Como Real;
+    Escribir "Cuantos litros de gasolina tiene?";
+    Leer gasolinaL;
+    Escribir "cuantos kilometros recorre";
+    Leer kl;
+    consumo <- gasolinaL / kl;
+    Escribir "el consumo es de ", consumo;
+FinAlgoritmo
