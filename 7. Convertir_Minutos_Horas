@@ -1,7 +1,0 @@
-Algoritmo Convertir_Minutos_Horas
-    Definir horas, minutos Como Entero;
-    Escribir "cuantos minutos son?";
-    Leer minutos;
-    horas <- minutos / 60;
-    Escribir "serian ", horas, " hora/s";
-FinAlgoritmo
