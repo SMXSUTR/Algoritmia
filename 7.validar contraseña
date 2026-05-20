@@ -1,0 +1,12 @@
+Proceso sin_titulo
+	definir n1, n2 Como Caracter;
+	escribir "dime tu contraseña ";
+	leer n1;
+	Escribir "escribe tu contraseña";
+	leer n2;
+	si n1==n2 Entonces
+		escribir "contraseña correcta";
+	SiNo
+		escribir "Error de contraseña";
+	FinSi
+FinProceso

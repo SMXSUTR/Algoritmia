@@ -1,0 +1,11 @@
+Proceso sin_titulo
+	definir n1, n2 Como Real;
+	escribir "cuanto es tu salario?";
+	leer n1;
+	si n1>2000000 Entonces
+		n2<-(n1*(100/18.8))-n1;
+		escribir "tu salario con impuesto es: ", n2;
+	SiNo
+		escribir "tu salario de ", n1, "no se le aplican impuestos";
+	FinSi
+FinProceso
