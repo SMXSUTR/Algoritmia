@@ -1,0 +1,14 @@
+Proceso sin_titulo
+	definir n1 como real;
+	escribir "dame un numero";
+	leer n1;
+	si n1>0 Entonces
+		Escribir "tu numero es positivo"; 
+	sino
+		si n1<0 Entonces
+			escribir "tu numero es negativo";
+		SiNo
+			escribir "tu numero es cero";
+		FinSi
+	FinSi
+FinProceso

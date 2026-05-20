@@ -1,0 +1,23 @@
+Proceso sin_titulo
+	definir n1, n2, n3 Como Real;
+	escribir "dame tu primer digito";
+	leer n1;
+	escribir "dame tu segundo digito";
+	leer n2;
+	escribir "dame tu tercer digito";
+	leer n3;
+	si n1>n2 Entonces
+		si n1>n3 Entonces
+			escribir n1, " es mayor que los demas";
+		SiNo
+			escribir n3, " es mayor que los demas";
+		FinSi
+	SiNo
+		si n2>n3 entonces
+			escribir n2, " es mayor que los demas";
+		sino 
+			escribir n3, " es mayor que los demas";
+		FinSi
+		
+	FinSi
+FinProceso

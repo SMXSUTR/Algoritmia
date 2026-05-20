@@ -1,0 +1,14 @@
+Proceso sin_titulo
+	definir n1 Como Real;
+	escribir "cuanto te sacaste";
+	leer n1;
+	si n1>100 entonces 
+		escribir "Error de datos";
+	sino 
+		si n1>70 entonces 
+			escribir "aprobaste";
+		SiNo
+			escribir "reprobaste";
+		FinSi
+	FinSi
+FinProceso

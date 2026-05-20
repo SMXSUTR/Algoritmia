@@ -1,0 +1,10 @@
+Proceso sin_titulo
+	definir n1 Como Real;
+	escribir "cunato costo tu pedido: ";
+	leer n1;
+	si n1>100000 entonces
+		escribir "ganaste un descuento, con tu descuento tu compra vale: ", (-n1*0.20)+n1;
+	sino 
+		escribir "paga lo compra";
+	FinSi
+FinProceso

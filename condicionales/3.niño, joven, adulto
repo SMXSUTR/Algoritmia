@@ -1,0 +1,16 @@
+Proceso sin_titulo
+	definir n1 Como Entero;
+	escribir "dame tu edad: ";
+	leer n1;
+	si n1<=12 Entonces
+		escribir "Tienes ", n1, " años, eres un niño";
+	sino 
+		si n1>12 y n1<=20 entonces
+			escribir "Tienes ", n1, " años, eres un joven";
+		sino 
+			si n1>20 y n1<60 Entonces
+				escribir "Tienes ", n1, " años, eres un adulto";			
+			FinSi
+		FinSi
+	FinSi
+FinProceso
