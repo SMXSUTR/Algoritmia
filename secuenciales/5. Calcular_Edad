@@ -1,0 +1,9 @@
+Algoritmo Calcular_Edad
+    Definir ano_actual, ano_de_nacimiento, edad Como Entero;
+    Escribir "que año es?";
+    Leer ano_actual;
+    Escribir "en que año naciste?";
+    Leer ano_de_nacimiento;
+    edad <- ano_actual - ano_de_nacimiento;
+    Escribir "tu edad es ", edad;
+FinAlgoritmo

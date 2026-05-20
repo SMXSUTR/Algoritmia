@@ -1,0 +1,9 @@
+Algoritmo Calcular_Perimetro_Rectangulo
+    Definir base, altura, perimetro Como Real;
+    Escribir "cual es la base del rectangulo";
+    Leer base;
+    Escribir "cual es la altura de el rectangulo";
+    Leer altura;
+    perimetro <- 2 * (base + altura);
+    Escribir "el perimetro de tu rectangulo es ", perimetro;
+FinAlgoritmo
