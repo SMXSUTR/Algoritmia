@@ -1,7 +1,0 @@
-Algoritmo Convertir_Celsius_Fahrenheit
-    Definir g_celsius, g_fahrenheit Como Real;
-    Escribir "que grados celsius estamos?";
-    Leer g_celsius;
-    g_fahrenheit <- (g_celsius * 1.8) + 32;
-    Escribir "estamos a ", g_fahrenheit, " grados fahrenheit";
-FinAlgoritmo
