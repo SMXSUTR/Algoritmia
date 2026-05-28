@@ -1,0 +1,68 @@
+Proceso largo
+	// Definir variables
+	definir sexo como caracter;
+	definir edad, altura, nh, nm, edp, cont, ap, amay, amen como real;
+	// nh=numero de hombres
+	// nm=numero de mujeres
+	// edp=edad promedio
+	// ap=altura promedio
+	// amay=altura mayor
+	// amen=altura menor
+	definir n como entero;
+	// Inicializar variables
+	cont<-0;
+	edp<-0;
+	amay<-0;
+	amen<-0;
+	nh<-0;
+	nm<-0;
+	ap<-0;
+	// Repetir mientras edad sea distinta de 0
+	Repetir
+		escribir "ingresando un dato: ";
+		escribir "dime tu edad";
+		leer edad;
+		// Validar edad
+		si edad>0 Entonces
+			edp<-edp+edad;
+			escribir "eres hombre o mujer?";
+			leer sexo;
+		    si sexo=="hombre" o sexo=="Hombre" Entonces
+				nh<-nh+1;
+				escribir "dime tu altura en metros ej: 1.65 ";
+				leer altura; 
+				ap<-ap+altura;
+				si altura>1.70 entonces
+					amay<-amay+1;
+			    sino 
+					si altura<=1.50 entonces
+						amen<-amen+1;
+					FinSi
+			    FinSi
+		    sino 
+			    si sexo=="mujer" o sexo=="Mujer" Entonces
+					nm<-nm+1;
+				    escribir "dime tu altura en metros ej: 1.60 ";
+				    leer altura; 
+					ap<-ap+altura;
+					si altura>1.70 entonces
+						amay<-amay+1;
+					sino 
+						si altura<=1.50 entonces
+							amen<-amen+1;
+					    FinSi
+					FinSi
+			    finsi 
+		    FinSi
+			cont<-cont+1;
+		sino 
+			si edad==0 Entonces
+				escribir "cierre de programa";
+			sino 
+				escribir "error";
+			FinSi
+	    FinSi
+	Hasta Que edad==0
+	// Mostrar resultados
+	escribir "la edad promedio es: ", edp/cont, ". el numero de hombres es: ",nh,". el munero de mujeres es: ",nm,". el promedio de altura: ",ap/cont,". numero de personas que miden mas de 1.70m: ",amay,". numero de personas que miden menos o igual de 1.50m: ", amen;
+FinAlgoritmo

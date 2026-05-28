@@ -1,0 +1,14 @@
+Proceso tabla_mult
+	// Definir variables
+	definir n, n1, n2 como entero;
+	// Pedir número de la tabla
+	escribir "dime que tabla quieres aprender?";
+	leer n;
+	// Generar tabla de multiplicar
+	para n1<-1 hasta 10 Hacer
+		para n2<-1 hasta 1 Hacer
+			// Mostrar multiplicación
+			escribir n, " x ", n1," = ",n1*n;
+		FinPara
+	FinPara
+FinProceso

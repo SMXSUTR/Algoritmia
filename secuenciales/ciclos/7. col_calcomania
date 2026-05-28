@@ -1,0 +1,31 @@
+Proceso col_calcomania
+	// Definir variables
+	definir n, n1, n2, n3 Como Entero;
+	// Pedir cantidad de autos
+	escribir "dime el numero de autos que entraron a la ciudad de ibague";
+	leer n;
+	// Leer último dígito de la placa
+	para n1<-1 hasta n Hacer
+		leer n2;
+		// Determinar color de la calcomanía
+		si n2==1 o n2==2 Entonces
+			escribir "el color de la calcomania es amarilla";
+		sino 
+			si n2==3 o n2==4 Entonces
+				escribir "el color de la calcomania es rosa";
+			SiNo
+				si n2==5 o n2==6 entonces
+					escribir "el color de la calcomania es roja";
+				SiNo
+					si n2==7 o n2==8 Entonces
+						escribir "el color de la calcomania es verde";
+					sino 
+						si n2==9 o n2==0 Entonces
+							escribir "el color de la calcomania es azul";
+						FinSi
+					FinSi
+				FinSi
+			FinSi
+		FinSi
+	FinPara
+FinProceso

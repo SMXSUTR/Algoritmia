@@ -1,0 +1,40 @@
+Proceso prom_edad_salon
+	// Definir variables
+	definir sexo Como Caracter;
+	definir n, n1, n2, n3, n4, n5, n6, n7 como real;
+	escribir "dame el numero de alumnos del aula";
+	leer n;
+	// Inicializar variables
+	n1<-0;
+	n2<-0;
+	n4<-0;
+	n5<-0;
+	n7<-0;
+	// Leer datos
+	repetir  
+		n1<-n1+1;
+		escribir "es hombre o mujer?";
+		leer sexo;
+		// Datos hombres
+		si sexo=="hombre" o sexo=="Hombre" entonces
+			n2<-n2+1;
+			
+			escribir "que edad tiene?";
+			leer n3;
+			
+			n4<-n4+n3;
+		sino
+			// Datos mujeres
+			si sexo=="mujer" o sexo=="Mujer" entonces
+				n5<-n5+1;
+				
+				escribir "que edad tiene?";
+				leer n6;
+				
+				n7<-n7+n6;
+			finsi
+		FinSi
+	Hasta Que n1==n
+	// Mostrar promedios
+	escribir "el promedio de edades de hombres es: ", n4/n2, ". Y el promedio de edad de las mujeres es de: ", n7/n5;
+FinProceso
