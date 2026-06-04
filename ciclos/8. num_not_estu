@@ -1,0 +1,39 @@
+Proceso num_not_estu
+	// Definir variables
+	definir n, n1, n2, n3 , n4, n5 Como Real;
+	// Inicializar variables
+	n<-0;
+	n2<-0;
+	n3<-0;
+	n4<-0;
+	n5<-0;
+	escribir "dame las notas del 1 al 100 ";
+	// Leer calificaciones
+	Repetir
+		n<-n+1;
+		leer n1;
+		// Clasificar notas
+		si n1>0 y n1<50 entonces
+		    n2<-n2+1;
+		SiNo
+			si n1>=50 y n1<70 Entonces
+				n3<-n3+1;
+			SiNo
+				si n1>=70 y n1<80 Entonces
+					n4<-n4+1;
+				SiNo
+					si n1>=80 y n1<=100 Entonces
+						n5<-n5+1;
+					sino 
+						escribir "error";
+					FinSi
+				FinSi
+			FinSi
+		FinSi
+	Hasta Que n==23
+	// Mostrar resultados
+	escribir "los estudiantes que sacaron de 1 a 49 fueron: ",n2;
+	escribir ". los estudiantes que sacaron de 50 a 69 fueron: ",n3;
+	escribir ". los estudiantes que sacaron de 70 a 79 fueron: ",n4;
+	escribir ". los estudiantes que sacaron de 80 a 100 fueron :",n5;
+FinProceso

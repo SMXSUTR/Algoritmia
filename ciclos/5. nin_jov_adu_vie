@@ -1,0 +1,26 @@
+Proceso nin_jov_adu_vie
+	// Definir variables
+	definir n,n1 como real;
+	// Leer edades
+	para n<-1 hasta 50 Hacer
+		leer n1;
+		// Clasificar por edad
+		si n1>=0 y n1<=12 Entonces
+			escribir "es un/a nin@";
+		sino 
+			si n1>=13 y n1<=29 Entonces
+				escribir "es un/a joven/cita";
+			SiNo
+				si n1>=30 y n1<=59 entonces
+					escribir "es un/a adult@";
+				SiNo
+					si n1<=60 Entonces
+						escribir "es un/a ancian@";
+					sino 
+						escribir "error";
+					FinSi
+				FinSi
+			FinSi
+		FinSi
+	FinPara
+FinProceso
